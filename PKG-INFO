@@ -1,3 +1,31 @@
+Metadata-Version: 2.1
+Name: autobuild
+Version: 3.9.6
+Summary: Linden Lab Automated Package Management and Build System
+Home-page: http://wiki.secondlife.com/wiki/Autobuild
+Author: Linden Research, Inc.
+Author-email: opensource-dev@lists.secondlife.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: llsd>=1.2.4
+Requires-Dist: pydot
+Requires-Dist: pyzstd
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Provides-Extra: build
+Requires-Dist: build; extra == "build"
+Requires-Dist: setuptools_scm; extra == "build"
+
 # Autobuild
 
 [![codecov](https://codecov.io/gh/secondlife/autobuild/branch/main/graph/badge.svg?token=8GBLMAFDIN)](https://codecov.io/gh/secondlife/autobuild)
